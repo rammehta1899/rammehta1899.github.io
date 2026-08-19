@@ -1,0 +1,18 @@
+title: Ram Mehta
+tagline: Engineering Leader
+description: Ram Mehta — Engineering Leader exploring interesting problems
+author: Ram Mehta
+url: https://rammehta1899.github.io
+baseurl: ""
+theme: minima
+timezone: America/New_York
+permalink: /blog/:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+show_excerpts: true
+# header_pages removed to prevent minima auto-nav doubling our custom nav
+minima:
+  skin: auto

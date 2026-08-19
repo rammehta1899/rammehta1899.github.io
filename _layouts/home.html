@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }} · {{ site.tagline }}</title>
+  <meta name="description" content="{{ site.description }}">
+  {% seo %}
+  <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+<body>
+  <div class="wrap">
+    {{ content }}
+    {% include footer.html %}
+  </div>
+</body>
+</html>
