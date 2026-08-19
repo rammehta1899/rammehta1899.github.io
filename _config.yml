@@ -1,6 +1,6 @@
 title: Ram Mehta
 tagline: Engineering Director
-description: Ram Mehta — Engineering Director interested in interesting problems
+description: Ram Mehta — Engineering Director exploring interesting problems
 author: Ram Mehta
 url: https://rammehta1899.github.io
 baseurl: ""
@@ -11,7 +11,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-redirect-from
 show_excerpts: true
 header_pages:
-  - about.md
   - blog.md

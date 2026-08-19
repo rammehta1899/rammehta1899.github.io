@@ -1,0 +1,37 @@
+/* Modern clean portfolio */
+:root{
+  --bg:#fbfbf9;
+  --ink:#101828;
+  --muted:#667085;
+  --card:#ffffff;
+  --line:#eaecf0;
+  --accent:#0b5fff;
+  --accent-2:#7c3aed;
+}
+body{font-family:Inter, ui-sans-system, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--ink);}
+.hero{
+  background: radial-gradient(1200px 600px at 20% -10%, #d6e1ff 0%, transparent 60%),
+              radial-gradient(900px 500px at 90% 0%, #e9d5ff 0%, transparent 50%),
+              linear-gradient(180deg, #fff 0%, #fbfbf9 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero-inner{max-width:1080px; margin:0 auto; padding:64px 24px 36px; display:grid; grid-template-columns:160px 1fr; gap:28px; align-items:start}
+.hero img{width:128px; height:128px; border-radius:999px; object-fit:cover; border:4px solid #fff; box-shadow:0 10px 30px rgba(16,24,40,.12)}
+.kicker{display:inline-flex; gap:8px; align-items:center; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#6941c6; background:#f4ebff; border:1px solid #e9d5ff; padding:6px 10px; border-radius:999px; margin-bottom:14px}
+h1.hero-title{font-size:44px; line-height:1.05; letter-spacing:-0.02em; margin:6px 0 12px; font-weight:800}
+.hero-sub{font-size:18px; line-height:1.5; color:var(--muted); max-width:640px}
+.hero-cta{margin-top:20px; display:flex; gap:12px; flex-wrap:wrap}
+.btn{appearance:none; border-radius:999px; padding:11px 16px; font-weight:600; font-size:14px; border:1px solid var(--line); background:var(--card); color:var(--ink); text-decoration:none; display:inline-flex; align-items:center; gap:8px}
+.btn.primary{background:var(--ink); color:#fff; border-color:var(--ink)}
+.btn:hover{transform:translateY(-1px); box-shadow:0 6px 18px rgba(16,24,40,.08)}
+.section{max-width:1080px; margin:0 auto; padding:28px 24px}
+.grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:14px}
+.card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.card h3{margin:0 0 6px; font-size:15px}
+.card p{margin:0; color:var(--muted); font-size:14px; line-height:1.5}
+.blog-wrap{margin-top:22px; border-top:1px dashed var(--line); padding-top:22px}
+.post-row{display:flex; justify-content:space-between; gap:16px; padding:12px 0; border-bottom:1px solid #f2f4f7}
+.post-row a{text-decoration:none; color:var(--ink); font-weight:600}
+.post-row a:hover{color:var(--accent)}
+.muted{color:var(--muted); font-size:13px}
+@media (max-width:800px){ .hero-inner{grid-template-columns:1fr; } .grid{grid-template-columns:1fr} h1.hero-title{font-size:36px}}
