@@ -1,12 +1,17 @@
 title: Ram Mehta
-description: Ram Mehta — Engineering Director
+tagline: Engineering Director
+description: Ram Mehta — Engineering Director interested in interesting problems
+author: Ram Mehta
+url: https://rammehta1899.github.io
+baseurl: ""
 theme: minima
+timezone: America/New_York
+permalink: /blog/:year/:month/:day/:title/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-author:
-  name: Ram Mehta
-
+  - jekyll-sitemap
+show_excerpts: true
 header_pages:
   - about.md
+  - blog.md
