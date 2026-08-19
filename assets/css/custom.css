@@ -1,37 +1,63 @@
-/* Modern clean portfolio */
+/* Ram Mehta — refined minimal personal site
+   Inspired by Lee Robinson, Brittany Chiang, Sat Naing — 2025 minimal */
 :root{
-  --bg:#fbfbf9;
-  --ink:#101828;
-  --muted:#667085;
-  --card:#ffffff;
-  --line:#eaecf0;
-  --accent:#0b5fff;
-  --accent-2:#7c3aed;
+  --bg:#fcfcf9;
+  --fg:#111827;
+  --muted:#6b7280;
+  --muted-2:#9ca3af;
+  --line:#e5e7eb;
+  --line-2:#f3f4f6;
+  --accent:#111827;
+  --link:#0f172a;
 }
-body{font-family:Inter, ui-sans-system, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--ink);}
-.hero{
-  background: radial-gradient(1200px 600px at 20% -10%, #d6e1ff 0%, transparent 60%),
-              radial-gradient(900px 500px at 90% 0%, #e9d5ff 0%, transparent 50%),
-              linear-gradient(180deg, #fff 0%, #fbfbf9 100%);
-  border-bottom:1px solid var(--line);
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:ui-sans-system,-apple-system,BlinkMacSystemFont,"Inter","SF Pro Text",Segoe UI,Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+
+.wrap{max-width:720px;margin:0 auto;padding:32px 20px 80px}
+
+/* top nav - super minimal like leerob.io */
+.topnav{display:flex;justify-content:space-between;align-items:center;margin-bottom:56px;font-size:14px}
+.topnav .brand{font-weight:650;letter-spacing:-0.01em}
+.topnav .navlinks{display:flex;gap:18px;color:var(--muted)}
+.topnav .navlinks a{color:var(--muted)} .topnav .navlinks a:hover{color:var(--fg)}
+
+.hero{display:flex;gap:28px;align-items:flex-start;margin-bottom:36px}
+.hero img{width:88px;height:88px;border-radius:999px;object-fit:cover;border:1px solid var(--line);flex-shrink:0}
+.hero h1{font-size:42px;line-height:0.95;letter-spacing:-0.03em;margin:2px 0 8px;font-weight:800}
+.hero .role{font-size:15px;font-weight:600;color:var(--fg);margin:0 0 10px;letter-spacing:-0.01em}
+.hero .bio{font-size:16.5px;color:#374151;max-width:52ch;margin:0;line-height:1.6}
+.hero .ctas{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.btn{font-size:13.5px;font-weight:600;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:white;display:inline-flex;align-items:center;gap:6px}
+.btn.primary{background:var(--fg);color:white;border-color:var(--fg)}
+.btn:hover{opacity:.92;text-decoration:none;transform:translateY(-0.5px)}
+
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);border:1px solid var(--line);background:white;padding:5px 10px;border-radius:999px;margin-bottom:14px}
+.kicker i{width:6px;height:6px;background:#10b981;border-radius:50%;display:inline-block}
+
+.section{margin-top:44px;padding-top:32px;border-top:1px solid var(--line-2)}
+.section h2{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted-2);margin:0 0 18px;font-weight:650}
+
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.card{border:1px solid var(--line);background:white;border-radius:14px;padding:14px 14px 13px}
+.card h3{font-size:13.5px;margin:0 0 6px;font-weight:660;letter-spacing:-0.01em}
+.card p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.5}
+
+.posts{list-style:none;margin:0;padding:0}
+.postrow{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line-2)}
+.postrow:last-child{border-bottom:none}
+.postrow a{font-size:14.5px;font-weight:560;color:var(--fg)}
+.postrow .date{font-size:12.5px;color:var(--muted-2);white-space:nowrap;margin-top:2px}
+.muted{color:var(--muted);font-size:14px}
+.empty{padding:14px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:13.5px;background:white}
+
+.footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--line-2);font-size:12.5px;color:var(--muted-2);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media(max-width:720px){
+  .hero{flex-direction:column;gap:16px}
+  .grid3{grid-template-columns:1fr}
+  .hero h1{font-size:36px}
+  .wrap{padding:24px 18px 60px}
+  .topnav{margin-bottom:34px}
 }
-.hero-inner{max-width:1080px; margin:0 auto; padding:64px 24px 36px; display:grid; grid-template-columns:160px 1fr; gap:28px; align-items:start}
-.hero img{width:128px; height:128px; border-radius:999px; object-fit:cover; border:4px solid #fff; box-shadow:0 10px 30px rgba(16,24,40,.12)}
-.kicker{display:inline-flex; gap:8px; align-items:center; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#6941c6; background:#f4ebff; border:1px solid #e9d5ff; padding:6px 10px; border-radius:999px; margin-bottom:14px}
-h1.hero-title{font-size:44px; line-height:1.05; letter-spacing:-0.02em; margin:6px 0 12px; font-weight:800}
-.hero-sub{font-size:18px; line-height:1.5; color:var(--muted); max-width:640px}
-.hero-cta{margin-top:20px; display:flex; gap:12px; flex-wrap:wrap}
-.btn{appearance:none; border-radius:999px; padding:11px 16px; font-weight:600; font-size:14px; border:1px solid var(--line); background:var(--card); color:var(--ink); text-decoration:none; display:inline-flex; align-items:center; gap:8px}
-.btn.primary{background:var(--ink); color:#fff; border-color:var(--ink)}
-.btn:hover{transform:translateY(-1px); box-shadow:0 6px 18px rgba(16,24,40,.08)}
-.section{max-width:1080px; margin:0 auto; padding:28px 24px}
-.grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:14px}
-.card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow:0 1px 2px rgba(16,24,40,.04)}
-.card h3{margin:0 0 6px; font-size:15px}
-.card p{margin:0; color:var(--muted); font-size:14px; line-height:1.5}
-.blog-wrap{margin-top:22px; border-top:1px dashed var(--line); padding-top:22px}
-.post-row{display:flex; justify-content:space-between; gap:16px; padding:12px 0; border-bottom:1px solid #f2f4f7}
-.post-row a{text-decoration:none; color:var(--ink); font-weight:600}
-.post-row a:hover{color:var(--accent)}
-.muted{color:var(--muted); font-size:13px}
-@media (max-width:800px){ .hero-inner{grid-template-columns:1fr; } .grid{grid-template-columns:1fr} h1.hero-title{font-size:36px}}
