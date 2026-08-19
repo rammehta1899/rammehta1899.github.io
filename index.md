@@ -10,7 +10,7 @@ title: Home
     <div>
       <div class="kicker">● Available for interesting problems</div>
       <h1 class="hero-title">Ram Mehta</h1>
-      <p class="hero-sub">Engineering Director — I like hard problems, clean systems, and shipping. I build where product, platform, and a little AI/ML overlap.</p>
+      <p class="hero-sub">Engineering Leader — I like hard problems, clean systems, and shipping. I build where product, platform, and a little AI/ML overlap.</p>
       <div class="hero-cta">
         <a class="btn primary" href="/blog/">Read the blog →</a>
         <a class="btn" href="https://github.com/rammehta1899">GitHub</a>
