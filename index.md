@@ -59,4 +59,4 @@ description: Ram Mehta — Engineering Leader exploring interesting problems
       <p>Search grounded, citation first, measured. If it does not earn its place, it does not ship.</p>
     </div>
   </div>
-</div></div>
+</div>
