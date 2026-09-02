@@ -16,3 +16,5 @@ show_excerpts: true
 # header_pages removed to prevent minima auto-nav doubling our custom nav
 minima:
   skin: auto
+
+google_analytics: G-GBZBCHDDVD
