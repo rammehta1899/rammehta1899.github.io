@@ -1,5 +1,5 @@
 ---
-title: Tiered KV Cache Offloading in vLLM v0.28.0: Breaking the GPU Memory Wall
+title: "Tiered KV Cache Offloading in vLLM v0.28.0: Breaking the GPU Memory Wall"
 description: How vLLM v0.28.0 breaks the GPU VRAM wall using native NVMe KV cache offloading, canonical CPU layouts, and Model Runner V2 disaggregation.
 categories: ["Engineering", "AI/ML"]
 tags: ["vllm", "platform-engineering", "kv-cache", "llm-serving", "gpu-memory"]

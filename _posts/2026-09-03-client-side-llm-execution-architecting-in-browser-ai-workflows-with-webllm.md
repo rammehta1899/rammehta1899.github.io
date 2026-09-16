@@ -1,5 +1,5 @@
 ---
-title: Client-Side LLM Execution: Architecting In-Browser AI Workflows with WebLLM
+title: "Client-Side LLM Execution: Architecting In-Browser AI Workflows with WebLLM"
 description: Execute open-source LLMs inside web browsers using WebLLM and WebGPU to eliminate cloud compute costs, preserve user privacy, and streamline frontend AI architecture.
 categories: ["Engineering", "AI/ML"]
 tags: ["webllm", "webgpu", "webassembly", "llm", "architecture"]
