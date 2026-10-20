@@ -1,8 +1,8 @@
-# Most-read posts, ranked by Google Analytics page views.
-# Seeded 2026-10-20 from the GA4 Pages and screens report (last 90 days,
-# Jul 22 – Oct 19, 2026; property 552492411). Once the update-popular
-# workflow is configured, it regenerates this file weekly — see
-# docs/google-analytics-popular.md.
+# Most-read posts — MANUALLY curated (decision 2026-10-20: no GA
+# automation; the Latest section is the automatic one). To update the
+# ranking, edit this list by hand (path + views) and push.
+# Current ranking pulled from GA4 on 2026-10-20 (Pages and screens,
+# last 90 days Jul 22 – Oct 19, 2026; property 552492411).
 generated_at: "2026-10-20"
 window_days: 90
 posts:
