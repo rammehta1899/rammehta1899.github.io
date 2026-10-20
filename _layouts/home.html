@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBZBCHDDVD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GBZBCHDDVD');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="_DPIXE80OReMBFYcyF6yoQeyXQCsGcnyYdDqgVCsthI" />
   <title>{{ site.title }} · {{ site.tagline }}</title>
   <meta name="description" content="{{ site.description }}">
   {% seo %}
-  <link rel="stylesheet" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="{{ '/assets/css/editorial.css' | relative_url }}">
 </head>
-<body>
-  <div class="wrap">
+<body class="editorial">
+  <header class="masthead">
+    <div class="wrap nav">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.data.profile.first_name }} <em>{{ site.data.profile.last_name }}</em></a>
+      <nav class="navlinks">
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
     {{ content }}
     {% include footer.html %}
-  </div>
+  </main>
 </body>
 </html>
