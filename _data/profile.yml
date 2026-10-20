@@ -1,0 +1,15 @@
+# Identity shown on the homepage. Edit here once; every section reads from this.
+name: "Ram Mehta"
+first_name: "Ram"
+last_name: "Mehta"
+role: "Engineering Leader · Systems & Product"
+photo: "/assets/profile.jpg"
+bio_html: "I build reliable platforms and product engineering teams that ship. Most of my work is about <strong>foundations that scale</strong>, thoughtful APIs, and practical AI that actually helps people, not demos."
+status: "Available for interesting problems"
+socials:
+  - label: "GitHub"
+    url: "https://github.com/rammehta1899"
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/ram-mehta-360506424/"
+  - label: "Facebook"
+    url: "https://www.facebook.com/ram.mehta.1899"
