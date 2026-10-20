@@ -1,0 +1,10 @@
+# Curated Focus band on the homepage (the "topics" strip in the Editorial design).
+- kicker: "Platform & Infrastructure"
+  title: "Platform as product"
+  text: "Internal platforms that feel like a good product: clear contracts, fast to adopt, boring to run."
+- kicker: "Product Engineering"
+  title: "Product craft"
+  text: "UI engineering where performance, accessibility, and maintainability are not afterthoughts."
+- kicker: "Grounded AI"
+  title: "AI where it fits"
+  text: "Search grounded, citation first, measured. If it does not earn its place, it does not ship."
