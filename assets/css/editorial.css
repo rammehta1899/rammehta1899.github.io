@@ -1,0 +1,116 @@
+/* Ram Mehta — Editorial homepage theme (2026 redesign)
+   Used only by _layouts/home.html. Other pages keep assets/css/custom.css. */
+:root{
+  --paper:#faf7f1; --card:#fffdf8; --ink:#1b1815; --muted:#71695d;
+  --accent:#a63d21; --rule:#e2dacb; --rule-dark:#c9bfa9;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body.editorial{background:var(--paper);color:var(--ink);
+  font-family:Georgia,'Times New Roman',serif;font-size:17px;line-height:1.6;}
+body.editorial a{color:inherit;text-decoration:none}
+body.editorial .wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+.sans{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+
+/* masthead */
+header.masthead{border-bottom:3px double var(--rule-dark)}
+header.masthead .nav{display:flex;justify-content:space-between;align-items:baseline;padding:22px 0 18px}
+header.masthead .brand{font-size:24px;font-weight:700;letter-spacing:.01em}
+header.masthead .brand em{font-style:italic;color:var(--accent)}
+header.masthead .navlinks a{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+  font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin-left:28px;color:var(--ink)}
+header.masthead .navlinks a:hover{color:var(--accent)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;padding:64px 0 56px;align-items:center}
+.kicker{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+  font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
+.hero h1{font-size:clamp(54px,7.5vw,92px);line-height:1.02;font-weight:700;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;font-weight:400}
+.bio{font-size:20px;line-height:1.65;color:#37312a;margin:28px 0 34px;max-width:34em}
+.bio strong{color:var(--ink)}
+.cta-row{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);
+  font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:13px;
+  letter-spacing:.14em;text-transform:uppercase;padding:14px 26px}
+body.editorial a.btn{color:var(--paper)}
+.btn:hover{background:var(--accent)}
+.socials a{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:14px;
+  margin-right:18px;border-bottom:1px solid var(--rule-dark);padding-bottom:2px}
+.socials a:hover{color:var(--accent);border-color:var(--accent)}
+.status{display:flex;align-items:center;gap:9px;margin-top:30px;
+  font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:13.5px;color:var(--muted)}
+.status i{width:8px;height:8px;border-radius:50%;background:#3e9e4f;display:inline-block}
+.photo-frame{position:relative}
+.photo-frame::before{content:"";position:absolute;inset:18px -18px -18px 18px;
+  border:1px solid var(--accent);z-index:0}
+.photo-frame img{position:relative;z-index:1;width:100%;display:block;filter:grayscale(12%)}
+
+/* featured */
+.featured{border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);
+  padding:44px 0 52px;margin-top:8px}
+.sec-label{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:26px;gap:16px;flex-wrap:wrap}
+.sec-label .l{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:12px;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--accent)}
+.sec-label .r{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:12.5px;color:var(--muted)}
+.featured h2{font-size:clamp(32px,4.2vw,50px);line-height:1.15;font-weight:700;max-width:19em}
+.featured h2 a:hover{color:var(--accent)}
+.featured .excerpt{font-size:19px;color:#37312a;max-width:44em;margin:20px 0 24px}
+.byline{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:13px;color:var(--muted)}
+.byline b{color:var(--ink);font-weight:600}
+body.editorial a.readmore{color:var(--accent)}
+.readmore{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:13px;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid var(--accent);padding-bottom:2px}
+
+/* latest grid */
+.latest{padding:52px 0 8px}
+.latest h3.sec,.popular h3.sec{font-size:30px;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:30px;
+  border-top:1px solid var(--rule);border-left:1px solid var(--rule)}
+.post{background:var(--card);border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  padding:26px 24px 30px;display:flex;flex-direction:column}
+.post .meta{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:11.5px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.post h4{font-size:21px;line-height:1.3;font-weight:700;margin-bottom:12px}
+.post h4 a:hover{color:var(--accent)}
+.post p{font-size:15.5px;color:#4a443b;flex:1}
+.post .tags{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:12px;
+  color:var(--muted);margin-top:18px}
+.post.all{display:flex;align-items:center;justify-content:center;text-align:center;background:var(--paper)}
+.post.all a{font-size:20px;font-style:italic;color:var(--accent)}
+
+/* popular (GA-driven; section hidden until _data/popular.yml has entries) */
+.popular{padding:52px 0 8px}
+.pop-list{margin-top:26px;border-top:1px solid var(--rule)}
+.poprow{display:flex;align-items:baseline;gap:18px;padding:15px 2px;border-bottom:1px solid var(--rule)}
+.poprow .rank{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:12px;
+  letter-spacing:.14em;color:var(--accent);min-width:26px}
+.poprow a{font-size:19px;font-weight:700;flex:1}
+.poprow a:hover{color:var(--accent)}
+.poprow .views{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:12.5px;
+  color:var(--muted);white-space:nowrap}
+
+/* topics band */
+.topics{margin:56px 0 0;border-top:3px double var(--rule-dark);border-bottom:1px solid var(--rule);
+  padding:40px 0 44px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.topic .t-k{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:11.5px;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.topic h5{font-size:20px;margin-bottom:8px}
+.topic p{font-size:15.5px;color:#4a443b}
+
+/* shared footer include, restyled for this theme */
+body.editorial .footer{margin-top:0;padding:34px 0 44px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+  font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:13px;color:var(--muted)}
+body.editorial .footer a{color:var(--muted)}
+body.editorial .footer a:hover{color:var(--accent)}
+body.editorial .footlinks{display:flex;gap:14px}
+
+@media (max-width:760px){
+  body.editorial .wrap{padding:0 20px}
+  .hero{grid-template-columns:1fr;gap:36px;padding:40px 0}
+  .photo-frame{max-width:340px}
+  .photo-frame::before{inset:12px -12px -12px 12px}
+  .grid{grid-template-columns:1fr}
+  .topics{grid-template-columns:1fr;gap:26px}
+  header.masthead .navlinks a{margin-left:18px}
+  .poprow a{font-size:17px}
+}
