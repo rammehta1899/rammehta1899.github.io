@@ -77,7 +77,7 @@ description: Ram Mehta — Engineering Leader exploring interesting problems
         <div class="poprow">
           <span class="rank">{{ forloop.index }}</span>
           <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-          <span class="views">{{ entry.views }} views</span>
+          <span class="readtime">{{ p.content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
         </div>
       {% endif %}
     {% endfor %}
