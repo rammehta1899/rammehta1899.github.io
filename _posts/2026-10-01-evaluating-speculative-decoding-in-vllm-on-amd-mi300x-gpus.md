@@ -3,6 +3,7 @@ title: "Evaluating Speculative Decoding in vLLM on AMD MI300X GPUs"
 description: "An engineering evaluation of speculative decoding methods in vLLM on AMD Instinct MI300X hardware, analyzing throughput, acceptance rates, and tradeoffs."
 categories: ["Engineering", "AI/ML"]
 tags: ["vllm", "amd", "mi300x", "rocm", "llm-inference", "platform-engineering"]
+labels: [llm-serving]
 ---
 Standard autoregressive inference in large language models remains strictly memory-bandwidth bound. Every single output token requires loading full target model parameters into GPU memory to process a single decode step. When running inference workloads on non-Nvidia hardware like AMD Instinct MI300X and MI355X GPUs using the ROCm software platform, platform teams must evaluate optimizations that decouple memory transfers from token yield. Recent benchmark work published on [Speculative Decoding in vLLM on AMD GPUs](https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus) provides concrete data on how draft-and-verify mechanisms alter serving throughput under real operational conditions.
 
