@@ -1,8 +1,9 @@
 ---
-title: "Architecting Asynchronous Agent Workflows: Checkpoints and Approvals in Pizza Bot"
+title: 'Async Agent Workflows with Checkpoints in Pizza Bot'
 description: "Learn how Pizza Bot uses stateful LangGraph runtimes, SSE, and explicit action queues to build durable, asynchronous background AI agents."
 categories: ["Engineering", "AI/ML"]
 tags: ["ai agents", "langgraph", "system architecture", "asynchronous", "platform engineering"]
+labels: [agent-workflows, pizza-bot]
 ---
 Most software teams building LLM applications make the same architectural mistake early on. They design agent execution around a synchronous, uninterrupted client connection. The user types a prompt into a chat window, the frontend opens an HTTP connection or WebSocket, and the client sits idle waiting for a chain of tool calls to complete. The moment the user closes their laptop lid, switches tabs on a mobile browser, or drops Wi-Fi for three seconds, the workflow breaks. Long-running automation cannot rely on ephemeral client connections. The open-source project [Pizza Bot on GitHub](https://github.com/pizza-bot-app/pizza-bot) offers a practical alternative by decoupling client interfaces from a persistent execution runtime.
 
