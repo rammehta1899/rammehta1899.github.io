@@ -1,8 +1,9 @@
 ---
-title: "Deterministic Replay: Giving AI Agents Time-Travel APIs to Fix Distributed Bugs"
+title: 'Deterministic Replay: Time-Travel APIs for AI Agents'
 description: "AI agents can now use deterministic time-travel APIs to step through nanosecond execution histories, isolate distributed race conditions, and verify fixes."
 categories: ["Platform Engineering", "AI/ML"]
 tags: ["distributed-systems", "ai-agents", "debugging", "platform-engineering", "antithesis"]
+labels: [ai-debugging, production-debugging]
 ---
 
 Code generation is no longer the bottleneck in platform engineering. Modern AI agents author pull requests far faster than engineering teams can thoroughly inspect them, creating an operational imbalance between creation and verification. The fundamental breakdown occurs when code changes touch distributed state, concurrent consensus protocols, or subtle execution timings. Reading a hundred-line diff in a pull request cannot tell you whether a Raft or Paxos implementation contains a hidden linearizability violation that only triggers under specific network delays. To address this gap, Antithesis opened up API access to its Multiverse Debugger, giving coding agents the ability to debug complex systems using deterministic execution replay. As described in the [Antithesis blog post on time-traveling agents](https://antithesis.com/blog/2026/time-traveling-agents/), agents can now rewind system execution to the exact nanosecond where a bug occurred, branch off interactive terminals, and verify their own fixes in a closed loop.
