@@ -1,6 +1,7 @@
 /* Ram Mehta — Editorial homepage theme (2026 redesign)
    Used only by _layouts/home.html. Other pages keep assets/css/custom.css. */
 :root{
+  color-scheme: light dark;
   --paper:#faf7f1; --card:#fffdf8; --ink:#1b1815; --muted:#71695d;
   --accent:#a63d21; --rule:#e2dacb; --rule-dark:#c9bfa9;
 }
@@ -113,4 +114,18 @@ body.editorial .footlinks{display:flex;gap:14px}
   .topics{grid-template-columns:1fr;gap:26px}
   header.masthead .navlinks a{margin-left:18px}
   .poprow a{font-size:17px}
+}
+
+/* dark mode — same Editorial palette translated: warm paper -> deep warm charcoal,
+   rust accent lightened to keep AA on the dark ground */
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#141519; --card:#1d1e22; --ink:#e9e7e2; --muted:#a79d8d;
+    --accent:#e07a52; --rule:#2e2d2b; --rule-dark:#45423b;
+  }
+  .hero h1,.featured h2,.latest h3.sec,.popular h3.sec,.post h4,.topic h5,
+  .poprow a,.bio strong,.byline b{color:#f5f3ed}
+  .bio,.featured .excerpt{color:#cfccc4}
+  .post p,.topic p{color:#c7c3ba}
+  .photo-frame img{filter:grayscale(12%) brightness(.92)}
 }
