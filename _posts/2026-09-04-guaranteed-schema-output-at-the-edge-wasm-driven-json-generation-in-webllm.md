@@ -1,8 +1,9 @@
 ---
-title: "Guaranteed Schema Output at the Edge: WASM-Driven JSON Generation in WebLLM"
+title: 'Guaranteed Schema Output: WASM JSON Generation in WebLLM'
 description: "How WebLLM enforces strict JSON schemas in the browser using WebAssembly and WebGPU to eliminate client-side LLM parse errors without server validation."
 categories: ["Engineering", "AI/ML"]
 tags: ["webllm", "webassembly", "webgpu", "json-schema", "edge-ai"]
+labels: [client-side-llm, controlled-generation]
 ---
 Front-end engineering teams integrating generative features into client applications constantly fight unhandled JSON parsing errors. When a large language model returns raw markdown blocks, unexpected key names, or trailing commas, client-side interfaces break. Developers frequently build fragile retry wrappers, write complex regular expressions, or route responses through backend server middleware just to validate output schemas. That extra hop introduces network latency, inflates server infrastructure costs, and still fails when models hallucinate completely invalid syntax. [WebLLM](https://github.com/mlc-ai/web-llm) addresses this failure mode by embedding structured JSON generation directly into its WebAssembly inference engine.
 
