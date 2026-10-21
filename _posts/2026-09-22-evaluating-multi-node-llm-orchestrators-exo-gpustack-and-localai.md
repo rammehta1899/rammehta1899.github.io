@@ -1,8 +1,9 @@
 ---
-title: "Evaluating Multi-Node LLM Orchestrators: Exo, GPUStack, and LocalAI"
+title: 'Multi-Node LLM Orchestrators: Exo, GPUStack, LocalAI'
 description: "A pragmatic teardown of self-hosted multi-node LLM orchestrators comparing zero-config P2P, supervisor-worker topologies, and cache-aware routing."
 categories: ["Platform Engineering", "AI/ML"]
 tags: ["llm", "platform engineering", "infrastructure", "gpu", "localai", "exo"]
+labels: [llm-orchestration, llm-serving]
 ---
 
 Single-machine runners like Ollama popularized local AI experimentation. You run a single pull command, point your application at a local port, and start building. That works until your workload outgrows a single desktop or GPU server. Fitting a 70B parameter model across multiple physical boxes, or distributing high concurrency across mixed hardware, requires an actual cluster orchestrator. Many platform teams reflexively default to heavy Kubernetes operators or complex Ray clusters before exploring dedicated inference tools. A comprehensive survey of [self-hosted inference orchestrators](https://www.nexlab.net/articles/self-hosted-inference-orchestrators-compared-2026/) highlights an array of lightweight options, ranging from peer-to-peer federated networks to supervisor-worker clusters. Choosing the wrong topology for your hardware creates severe network bottlenecks and wastes expensive compute resources.
