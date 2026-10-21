@@ -1,7 +1,6 @@
 ---
 layout: post
-title: 'Debugging Production Without Redeploys: AI Agents and Non-Blocking Virtual
-  Probes'
+title: 'Debugging Production Without Redeploys: AI Virtual Probes'
 date: 2026-08-19 11:49:54 -0400
 description: How AI agents and read-only virtual probes eliminate speculative redeployments
   and capture live runtime state without pausing threads.
@@ -14,6 +13,7 @@ tags:
 - observability
 - ai agents
 - devops
+labels: [ai-debugging, incident-response]
 author: Ram Mehta
 ---
 
