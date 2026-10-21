@@ -13,6 +13,7 @@ tags:
 - mcp
 - multi-agent
 - ozbrain
+labels: [agent-context, mcp]
 author: Ram Mehta
 ---
 
