@@ -1,7 +1,6 @@
 ---
 layout: post
-title: 'Zero-Trust Secrets Management: Stopping Key Rotation Cascades with Git-Native
-  Workflows'
+title: 'Zero-Trust Secrets Management: Stop Key Rotation Cascades'
 date: 2026-08-20 14:01:36 -0400
 description: How local-first encryption and two-party cryptographic revocation eliminate
   key rotation cascades during developer offboarding.
@@ -14,6 +13,7 @@ tags:
 - developer experience
 - git
 - zero trust
+labels: [secrets-management, zero-trust, security]
 author: Ram Mehta
 ---
 
