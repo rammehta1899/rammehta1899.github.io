@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How Read-Only AI Debugging Agents Change Production Incident Response
+title: 'How Read-Only AI Debugging Agents Change Incident Response'
 date: 2026-08-19 17:22:40 -0400
 description: Platform engineering teams are moving from redeploy-and-log loops to
   ephemeral, read-only AI probing in live production environments.
@@ -13,6 +13,7 @@ tags:
 - ai agents
 - incident response
 - hyperprobe
+labels: [ai-debugging, incident-response]
 author: Ram Mehta
 ---
 
