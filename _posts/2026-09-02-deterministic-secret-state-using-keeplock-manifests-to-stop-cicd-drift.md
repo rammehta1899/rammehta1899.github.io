@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Deterministic Secret State: Using keep.lock Manifests to Stop CI/CD Drift'
+title: 'Deterministic Secret State: keep.lock Stops CI/CD Drift'
 date: 2026-09-02 13:23:41 -0400
 description: Aligning secret state with Git commits using committed keep.lock manifests
   prevents build failures and runtime secret drift across engineering teams.
@@ -13,6 +13,7 @@ tags:
 - capy
 - git
 - platform engineering
+labels: [secrets-management, git-native-secrets]
 author: Ram Mehta
 issue_number: 13
 issue_url: https://github.com/rammehta1899/blog-gen/issues/13
