@@ -1,8 +1,9 @@
 ---
-title: Building Least-Privilege Filesystem Sandboxing for Autonomous Agent Runtimes
+title: 'Least-Privilege Filesystem Sandboxing for Agent Runtimes'
 description: How Pizza Bot isolates background AI agent execution using explicit directory whitelisting, process separation, and tool-scoped subagents.
 categories: ["Engineering", "AI/ML"]
 tags: [platform engineering, agent runtime, security, sandbox, architecture]
+labels: [agent-runtimes, pizza-bot, security]
 ---
 Local AI agents promise to execute multi-step software engineering tasks in the background while you focus on higher-level system design. You trigger a background run, switch contexts, and collect the output later. But when local agent runtimes transition from passive prompt generation to active workspace modification, security defaults become a pressing concern. Most local agent frameworks run with unrestricted access to the developer's home directory. They inherit whichever credentials, SSH keys, and configuration files belong to the user account launching the process.
 
