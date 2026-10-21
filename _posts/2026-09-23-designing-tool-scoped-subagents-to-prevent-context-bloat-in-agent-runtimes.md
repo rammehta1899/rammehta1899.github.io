@@ -1,8 +1,9 @@
 ---
-title: "Designing Tool-Scoped Subagents to Prevent Context Bloat in Agent Runtimes"
+title: 'Designing Tool-Scoped Subagents to Prevent Context Bloat'
 description: "How isolating capabilities into tool-scoped subagents prevents context bloat, reduces inference latency, and stabilizes long-running AI agent runtimes."
 categories: ["Engineering", "AI/ML"]
 tags: ["platform engineering", "agentic workflows", "llm", "langgraph", "software architecture"]
+labels: [agent-context, agent-workflows]
 ---
 Building production AI agents usually starts with a simple loop. You hand a large language model a system prompt, a few function signatures, and a user query. As business requirements grow, engineering teams inevitably attach more capabilities to that same prompt. What began as five clean JSON schemas quickly expands into thirty complex function definitions. This creates severe context window bloat, inflates input token overhead, and sharply degrades model performance. The language model spends an enormous fraction of its attention budget evaluating tool descriptions it will never use for the immediate task, leading to tool-selection hallucination and higher inference latency. Resolving this bottleneck requires an architectural shift from monolithic prompt construction toward tool-scoped subagents, a design pattern demonstrated by [Pizza Bot](https://github.com/pizza-bot-app/pizza-bot), an open-source local-first workspace for long-running agentic workflows.
 
