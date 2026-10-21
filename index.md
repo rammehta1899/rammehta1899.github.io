@@ -31,7 +31,7 @@ description: Ram Mehta — Engineering Leader exploring interesting problems
   {% assign featured = site.posts.first %}
 {% endif %}
 
-<section class="featured">
+<section class="featured" data-surface="home-featured">
   <div class="sec-label">
     <span class="l">Featured essay</span>
     <span class="r">From {{ site.posts.size }} essays on platforms, distributed systems &amp; applied AI</span>
@@ -42,7 +42,7 @@ description: Ram Mehta — Engineering Leader exploring interesting problems
     <a class="readmore" href="{{ featured.url | relative_url }}">Read the essay</a></p>
 </section>
 
-<section class="latest">
+<section class="latest" data-surface="home-latest">
   <h3 class="sec">Latest writing</h3>
   <div class="grid">
     {% assign shown = 0 %}
@@ -64,7 +64,7 @@ description: Ram Mehta — Engineering Leader exploring interesting problems
 </section>
 
 {% if site.data.popular.posts.size > 0 %}
-<section class="popular">
+<section class="popular" data-surface="home-popular">
   <div class="sec-label">
     <span class="l">Most read</span>
     <span class="r">Ranked by analytics · last {{ site.data.popular.window_days }} days</span>
