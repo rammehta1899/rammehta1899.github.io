@@ -1,15 +1,17 @@
 /* Ram Mehta — professional minimal, 2026 refresh
    Inspired by leerob.io / p Austen — tight typography, lots of whitespace */
 :root{
+  color-scheme: light dark;
   --bg:#fcfcfa;
   --fg:#0f172a;
   --muted:#64748b;
-  --muted-2:#94a3b8;
+  --muted-2:#61748c;
   --line:#e2e8f0;
   --line-2:#f1f5f9;
   --accent:#0f172a;
   --pill-bg:#f8fafc;
   --card:#ffffff;
+  --code-bg:#f5f6f8;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:Inter,ui-sans-system,-apple-system,BlinkMacSystemFont,"SF Pro","Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:1.65;letter-spacing:-0.011em}
@@ -61,6 +63,17 @@ a:hover{text-decoration:underline;text-underline-offset:3px;text-decoration-thic
 .postrow .date{font-size:12.8px;color:var(--muted-2);white-space:nowrap;margin-top:3px;font-family:ui-monospace,monospace}
 .muted{color:var(--muted);font-size:14px}
 .empty{padding:16px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:14px;background:white}
+
+/* post labels (post pages) + labels index page */
+.postlabels{margin-top:44px;font-size:13.5px;color:var(--muted-2)}
+.postlabels a{font-weight:600}
+.labelgroup{margin-top:36px}
+.labelgroup h2{font-size:19px;margin:0 0 4px;letter-spacing:-0.015em}
+.labelgroup h2 .count{color:var(--muted-2);font-weight:500;font-size:14px}
+
+/* related essays (post pages) */
+.related{margin-top:48px;padding-top:32px;border-top:1px solid var(--line-2)}
+.related h2{font-size:12.2px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted-2);margin:0 0 8px;font-weight:700}
 
 /* blog list */
 .page-title{font-size:26px;letter-spacing:-0.02em;margin:0 0 8px;font-weight:780}
@@ -164,4 +177,86 @@ a:hover{text-decoration:underline;text-underline-offset:3px;text-decoration-thic
     white-space:nowrap;
     margin-top:2px;
   }
+}
+
+/* code blocks + inline code (rouge/kramdown output) */
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
+:not(pre)>code{font-size:.86em;background:var(--code-bg);border:1px solid var(--line-2);
+  padding:.1em .34em;border-radius:5px}
+pre,.highlight{background:var(--code-bg);border:1px solid var(--line);border-radius:10px;
+  padding:14px 16px;overflow-x:auto;line-height:1.55;font-size:13.5px;margin:22px 0}
+.highlight pre{margin:0;padding:0;border:0;border-radius:0;background:transparent;overflow:visible}
+pre code{background:transparent;border:0;padding:0;font-size:inherit}
+.highlight code{background:transparent;border:0;padding:0}
+
+/* rouge tokens — light */
+.highlight .c,.highlight .cm,.highlight .cp,.highlight .c1,.highlight .cs{color:#59636e;font-style:italic}
+.highlight .err{color:#b31d28;background-color:#ffeef0}
+.highlight .k,.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,
+.highlight .kr,.highlight .o,.highlight .ow{color:#cf222e}
+.highlight .s,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .se,
+.highlight .sh,.highlight .si,.highlight .sx,.highlight .s1,.highlight .sr,
+.highlight .ss,.highlight .ld{color:#032f62}
+.highlight .nc,.highlight .nf,.highlight .nd,.highlight .ne,.highlight .nn{color:#6f42c1}
+.highlight .m,.highlight .mf,.highlight .mh,.highlight .il,.highlight .mi,
+.highlight .mo,.highlight .na,.highlight .nb,.highlight .bp{color:#005cc5}
+.highlight .kt{color:#953800}
+.highlight .nt{color:#1a7f37}
+.highlight .gh,.highlight .gu{color:#0550ae;font-weight:600}
+.highlight .gd{color:#b31d28;background-color:#ffeef0}
+.highlight .gi{color:#116329;background-color:#dafbe1}
+.highlight .ge{font-style:italic}
+.highlight .gs{font-weight:700}
+
+/* tables */
+table{border-collapse:collapse;width:100%;margin:24px 0;font-size:14.5px;line-height:1.5}
+th,td{border:1px solid var(--line);padding:8px 12px;text-align:left;vertical-align:top}
+th{background:var(--pill-bg);font-weight:650}
+@media(max-width:760px){
+  table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#141519;
+    --fg:#e9e7e2;
+    --muted:#a6adb8;
+    --muted-2:#939ba7;
+    --line:#2a2b30;
+    --line-2:#222329;
+    --accent:#e9e7e2;
+    --pill-bg:#1e1f24;
+    --card:#1b1c20;
+    --code-bg:#1d1e22;
+  }
+  .hero h1,.page-title{color:#f6f6f3}
+  .hero .bio{color:#c6ccd5}
+  .bloglist .desc{color:#a6adb8}
+  .kicker{color:#6ee7b7;background:#0a2e21;border-color:#14532d}
+  .kicker i{background:#34d399;box-shadow:0 0 0 3px #14532d}
+  .btn.primary{color:#141519}
+  .btn:hover,.social a:hover{box-shadow:0 4px 12px rgba(0,0,0,0.4)}
+  .card:hover,.social a:hover{border-color:#3a3d44}
+  .empty{background:var(--card)}
+  .postrow{border-bottom-color:#2a2b30}
+  .top-pattern::before{opacity:.35}
+  .top-pattern::after{background:linear-gradient(to bottom, rgba(20,21,25,0) 0%, rgba(20,21,25,0.15) 42%, rgba(20,21,25,0.75) 72%, rgba(20,21,25,1) 92%)}
+
+  /* rouge tokens — dark */
+  .highlight .c,.highlight .cm,.highlight .cp,.highlight .c1,.highlight .cs{color:#8b949e}
+  .highlight .err{color:#ffa198;background-color:rgba(248,81,73,.14)}
+  .highlight .k,.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,
+  .highlight .kr,.highlight .o,.highlight .ow{color:#ff7b72}
+  .highlight .s,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .se,
+  .highlight .sh,.highlight .si,.highlight .sx,.highlight .s1,.highlight .sr,
+  .highlight .ss,.highlight .ld{color:#a5d6ff}
+  .highlight .nc,.highlight .nf,.highlight .nd,.highlight .ne,.highlight .nn{color:#d2a8ff}
+  .highlight .m,.highlight .mf,.highlight .mh,.highlight .il,.highlight .mi,
+  .highlight .mo,.highlight .na,.highlight .nb,.highlight .bp,.highlight .no{color:#79c0ff}
+  .highlight .kt{color:#ffa657}
+  .highlight .nt{color:#7ee787}
+  .highlight .gh,.highlight .gu{color:#79c0ff}
+  .highlight .gd{color:#ffa198;background-color:rgba(248,81,73,.14)}
+  .highlight .gi{color:#56d364;background-color:rgba(63,185,80,.14)}
 }
