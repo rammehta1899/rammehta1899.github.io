@@ -1,8 +1,9 @@
 ---
-title: "Evaluating AST-Aware Semantic Diffing for Code Review at Scale"
+title: 'Evaluating AST-Aware Semantic Diffing for Code Review'
 description: "An evaluation of Rust-based AST semantic diff engines, visual diagrams, and LSP integration for reducing PR noise during large architectural code reviews."
 categories: ["Engineering", "Platform"]
 tags: ["platform engineering", "code review", "ast", "diffing", "ai"]
+labels: [code-review, system-visualization]
 ---
 
 Unified diffs were designed decades ago for terminal screens, comparing text line by line without understanding program execution or structure. In large engineering organizations where multiple teams and autonomous AI agents churn out thousands of lines of code daily, raw unified diffs quickly turn into illegible noise during pull request reviews. Extra whitespace, variable renames, and auto-formatting obscure the actual architectural changes you need to inspect. I recently evaluated [Whiteboard](https://github.com/devdotfast/whiteboard), an open-source tool built around a Rust-based AST-aware semantic diff viewer, to see if structural parsing can solve our code review throughput bottlenecks.
