@@ -1,0 +1,17 @@
+<script>
+document.addEventListener('click', function (event) {
+  var link = event.target.closest('a[href]');
+  if (!link) { return; }
+  if (link.closest('.related')) { return; } /* related_click covers these */
+  var url;
+  try { url = new URL(link.href); } catch (e) { return; }
+  if (url.host !== window.location.host) { return; }
+  if (!window.gtag) { return; }
+  var host = link.closest('[data-surface]');
+  gtag('event', 'internal_click', {
+    source_page: window.location.pathname,
+    target_page: url.pathname,
+    surface: host ? host.getAttribute('data-surface') : 'content'
+  });
+});
+</script>
