@@ -3,6 +3,7 @@ title: Client-Side Determinism and Logit Control with WebLLM
 description: How WebLLM brings OpenAI-compatible streaming, logit bias, and seed determinism directly to browsers via WebGPU and WebAssembly.
 categories: ["Platform Engineering", "AI Architecture"]
 tags: ["webllm", "webgpu", "webassembly", "llm-inference", "determinism"]
+labels: [controlled-generation]
 ---
 
 Running large language models on backend server clusters gets expensive quickly, especially when you are serving high-volume interactive workloads or running continuous integration checks on system prompts. Shift those inference workloads into the browser runtime, and your operational economics change completely. The cost burden shifts from recurring cloud GPU compute to local client execution. That sounds ideal on paper, but client-side execution creates a whole new set of technical constraints around execution determinism, payload transfer, and memory management.
