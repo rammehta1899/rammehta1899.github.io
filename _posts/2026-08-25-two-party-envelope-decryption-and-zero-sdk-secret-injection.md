@@ -13,6 +13,7 @@ tags:
 - platform engineering
 - devops
 - zero-trust
+labels: [secrets-management, zero-trust, security]
 author: Ram Mehta
 ---
 
