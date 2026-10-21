@@ -1,8 +1,9 @@
 ---
-title: "Scheduling Agents Like Processes: Distributed System Patterns for AI Fleets"
+title: 'Scheduling Agents Like Processes: Patterns for AI Fleets'
 description: "Why scaling autonomous AI agent fleets requires OS kernel patterns, decoupled state, and process scheduling rather than bigger context windows."
 categories: ["Engineering", "AI/ML"]
 tags: ["platform engineering", "distributed systems", "ai agents", "system architecture"]
+labels: [agent-scheduling, agent-runtimes]
 ---
 
 When engineering teams attempt to scale autonomous AI agent workloads, they usually start by tweaking prompts or expanding context windows. That approach hits a brick wall fast. As multi-agent counts scale, unmanaged inter-agent communication overhead and context window exhaustion lead to severe error amplification and task failure. Treating multi-agent orchestration purely as a prompt engineering challenge misses the structural issue. As highlighted in recent distributed systems analysis on [scaling agent fleets](https://www.instacloud.com/blogs/a-million-agents-is-a-distributed-systems-problem), scaling a thousand agents is not a prompt problem, it is a classic operating systems and distributed systems problem.
