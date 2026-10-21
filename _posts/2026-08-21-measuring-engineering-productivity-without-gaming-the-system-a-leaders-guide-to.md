@@ -1,7 +1,6 @@
 ---
 layout: post
-title: 'Measuring Engineering Productivity Without Gaming the System: A Leader''s
-  Guide to the DX Core 4'
+title: 'Measuring Engineering Productivity: The DX Core 4 Guide'
 date: 2026-08-21 14:02:17 -0400
 description: How the DX Core 4 framework combines DORA, SPACE, and DevEx to balance
   velocity, software quality, and developer experience.
@@ -14,6 +13,7 @@ tags:
 - dora
 - dx core 4
 - metrics
+labels: [engineering-leadership]
 author: Ram Mehta
 ---
 
