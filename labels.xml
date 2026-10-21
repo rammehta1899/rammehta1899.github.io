@@ -1,0 +1,31 @@
+---
+layout: none
+permalink: /labels.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{% assign all_labels = "" | split: "," %}
+{% for post in site.posts %}
+  {% for label in post.labels %}
+    {% unless all_labels contains label %}
+      {% assign all_labels = all_labels | push: label %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+{% assign all_labels = all_labels | sort %}
+<!-- Controlled label vocabulary for this blog. The single source of truth is the `labels:` field in each post's front matter; this file is generated from it at build time. -->
+<labels site="{{ site.url }}" generated="{{ site.time | date: '%Y-%m-%d' }}">
+{% for label in all_labels %}
+  {% assign count = 0 %}
+  {% for post in site.posts %}
+    {% if post.labels contains label %}{% assign count = count | plus: 1 %}{% endif %}
+  {% endfor %}
+  <label slug="{{ label }}" count="{{ count }}" url="{{ site.url }}/labels/#{{ label }}">
+  {% for post in site.posts %}
+    {% if post.labels contains label %}
+    <post url="{{ site.url }}{{ post.url }}" date="{{ post.date | date: '%Y-%m-%d' }}">{{ post.title | xml_escape }}</post>
+    {% endif %}
+  {% endfor %}
+  </label>
+{% endfor %}
+</labels>
