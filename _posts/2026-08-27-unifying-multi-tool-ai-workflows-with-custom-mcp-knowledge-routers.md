@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unifying Multi-Tool AI Workflows with Custom MCP Knowledge Routers
+title: 'Unifying Multi-Tool AI Workflows with MCP Knowledge Routers'
 date: 2026-08-27 08:32:06 -0400
 description: Eliminate context drift across Cursor, Claude Code, and ChatGPT by deploying
   central MCP knowledge routers for your engineering team.
@@ -13,6 +13,7 @@ tags:
 - ai-agents
 - context-window
 - developer-experience
+labels: [agent-context, mcp]
 author: Ram Mehta
 ---
 
