@@ -1,8 +1,9 @@
 ---
-title: "Interactive Architecture Models: Visualizing Distributed System Tradeoffs"
+title: 'Interactive Architecture Models: Visualizing Tradeoffs'
 description: "Learn how interactive architecture models reveal distributed system tradeoffs, fault boundaries, and stateful flow bottlenecks before shipping code."
 categories: ["Engineering"]
 tags: ["system-design", "distributed-systems", "architecture", "platform-engineering", "ai-infrastructure"]
+labels: [system-visualization, distributed-systems-theory]
 ---
 Static architectural diagrams lie to us. They give engineers a warm, false sense of clarity while hiding the dynamic realities of production systems. A neat box labeled "Load Balancer" pointing to three boxes labeled "API Workers" doesn't reveal what happens when one node experiences a three-second garbage collection pause. It won't show you how backpressure cascades into upstream connection pools, nor will it illustrate how data partitioning breaks under hot-key skew. As platform architectures grow increasingly distributed, relying on static PNGs or flat text documents during architectural reviews becomes a major liability. We need interactive architecture models that let teams pan, zoom, inspect component boundaries, and stress-test data flows before writing a single line of production code.
 
