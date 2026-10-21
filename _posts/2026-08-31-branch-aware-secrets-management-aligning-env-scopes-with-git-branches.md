@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Branch-Aware Secrets Management: Aligning Env Scopes with Git Branches'
+title: 'Branch-Aware Secrets: Aligning Env Scopes to Git Branches'
 date: 2026-08-31 13:14:28 -0400
 description: Eliminate configuration drift across feature branches by pairing secrets
   directly to Git using versioned keep.lock manifests and CLI tools.
@@ -13,6 +13,7 @@ tags:
 - platform engineering
 - devops
 - capy
+labels: [secrets-management, git-native-secrets]
 author: Ram Mehta
 issue_number: 11
 issue_url: https://github.com/rammehta1899/blog-gen/issues/11
