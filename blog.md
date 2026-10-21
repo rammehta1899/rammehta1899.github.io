@@ -10,7 +10,7 @@ description: Blog posts by Ram Mehta on engineering leadership, platform, and pr
   <p class="muted" style="margin:4px 0 18px">Notes on engineering, platforms, and shipping product. Latest first.</p>
 
   {% if site.posts.size > 0 %}
-    <ul class="bloglist">
+    <ul class="bloglist" data-surface="blog-index">
     {% for post in site.posts %}
       <li>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
