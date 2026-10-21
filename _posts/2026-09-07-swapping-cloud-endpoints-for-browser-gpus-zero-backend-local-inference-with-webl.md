@@ -1,8 +1,9 @@
 ---
-title: "Swapping Cloud Endpoints for Browser GPUs: Zero-Backend Local Inference with WebLLM"
+title: 'Zero-Backend Local Inference with WebLLM on Browser GPUs'
 description: "Run open source LLMs directly inside client browsers using WebGPU and WebLLM without modifying application logic or paying backend token costs."
 categories: ["Platform Engineering", "AI/ML"]
 tags: ["webgpu", "webllm", "llm", "local-inference", "openai-api"]
+labels: [client-side-llm]
 ---
 
 Engineering teams spending tens of thousands of dollars every month on managed inference endpoints usually accept a set of known compromises. Every prompt travels across the public internet, incurs per-token charges, and introduces data residency risks for sensitive customer workflows. WebGPU changes this balance by giving web engines direct access to local graphics hardware. The [WebLLM project](https://github.com/mlc-ai/web-llm) harnesses this capability to run foundation models directly on client devices while maintaining exact interface compatibility with the OpenAI API signature.
