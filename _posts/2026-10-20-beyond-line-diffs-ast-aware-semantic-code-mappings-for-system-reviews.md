@@ -1,8 +1,9 @@
 ---
-title: "Beyond Line Diffs: AST-Aware Semantic Code Mappings for System Reviews"
+title: 'Beyond Line Diffs: AST-Aware Semantic Code Mappings'
 description: "Line-based git diffs obscure architectural intent during cross-service refactorings. AST-aware semantic diffing and interactive visual canvases restore clarity."
 categories: ["Platform Engineering", "Software Architecture"]
 tags: ["git", "ast", "code-review", "developer-tools", "ai-agents"]
+labels: [code-review, system-visualization]
 ---
 Line-based git diffs fail senior engineers during complex system reviews. When an engineer submits a pull request spanning four microservices to replace a synchronous HTTP call with an asynchronous message queue, Git outputs three thousand modified lines. Most of those lines are pure syntax noise, such as adjusted import blocks, modified parameter formatting, or auto-generated boilerplate. Trying to infer architectural intent from unified diff format takes hours of painful manual tracing. To fix this gap in review workflows, developers are adopting AST-aware semantic diffing combined with interactive canvas representations, like those found in the [Whiteboard repository](https://github.com/devdotfast/whiteboard). This shift changes code reviews from line-by-line proofreading into structural validation.
 
