@@ -1,8 +1,9 @@
 ---
-title: "Bridging Distributed Systems Theory and Production Platform Engineering"
+title: 'Bridging Systems Theory and Production Platform Engineering'
 description: "How classical distributed primitives like FLP, Raft, and CRDTs translate to modern multi-region platform reliability and operational trade-offs."
 categories: ["Engineering", "Platform"]
 tags: ["distributed-systems", "platform-engineering", "raft", "crdt", "reliability"]
+labels: [distributed-systems-theory, consensus-and-replication]
 ---
 
 Distributed systems theory gives platform engineers mathematical boundaries, but production incidents rarely present themselves as neat theoretical proofs. When a cross-region platform degraded last quarter, the root cause was not a flaw in consensus logic. It was an uncalibrated heartbeat timeout that triggered cascading election loops across three cloud regions. Theoretical models assume clean abstractions, while production engineering lives in the operational gaps.
