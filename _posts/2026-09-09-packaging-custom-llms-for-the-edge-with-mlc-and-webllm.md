@@ -3,6 +3,7 @@ title: Packaging Custom LLMs for the Edge with MLC and WebLLM
 description: Learn how platform teams build edge CI/CD pipelines to package fine-tuned open-weight LLMs into MLC format for browser-native WebGPU execution.
 categories: ["Engineering", "AI/ML"]
 tags: [platform engineering, webllm, webgpu, mlc, model packaging]
+labels: [client-side-llm]
 ---
 Running large language models on centralized server infrastructure gets expensive fast. Every user prompt consumes compute cycles in your cloud account, inflating monthly cloud bills while introducing geographic network latency. To address this, platform teams are exploring client-side execution, shifting inference directly to user browser environments. The open-source project [WebLLM](https://github.com/mlc-ai/web-llm) makes this achievable by bringing language model inference into browsers using WebGPU and WebAssembly. Instead of renting cloud GPUs to serve simple fine-tuned tasks, platform engineers can now compile model weights into static artifacts distributed straight to client devices.
 
