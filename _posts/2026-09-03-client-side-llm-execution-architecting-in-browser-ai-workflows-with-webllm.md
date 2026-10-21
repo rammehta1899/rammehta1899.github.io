@@ -1,8 +1,9 @@
 ---
-title: "Client-Side LLM Execution: Architecting In-Browser AI Workflows with WebLLM"
+title: 'Client-Side LLM Execution: In-Browser Workflows with WebLLM'
 description: Execute open-source LLMs inside web browsers using WebLLM and WebGPU to eliminate cloud compute costs, preserve user privacy, and streamline frontend AI architecture.
 categories: ["Engineering", "AI/ML"]
 tags: ["webllm", "webgpu", "webassembly", "llm", "architecture"]
+labels: [client-side-llm]
 ---
 
 Running foundation models inside production web applications historically meant provisioning expensive cloud GPU instances, managing complex auto-scaling policies, and absorbing unpredictable monthly API bills. That baseline changes significantly with browser-native acceleration. By using the [WebLLM inference engine](https://github.com/mlc-ai/web-llm), platform and product teams can execute open-source large language models directly on client hardware through WebGPU. No middleman backend server processes user prompts. No cloud infrastructure provider bills you per generated token. User data stays entirely inside the browser session, satisfying strict privacy requirements without custom server proxies or complex compliance firewalls.
