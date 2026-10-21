@@ -1,8 +1,9 @@
 ---
-title: "Tiered KV Cache Offloading in vLLM v0.28.0: Breaking the GPU Memory Wall"
+title: 'KV Cache Offloading in vLLM: Breaking the GPU Memory Wall'
 description: How vLLM v0.28.0 breaks the GPU VRAM wall using native NVMe KV cache offloading, canonical CPU layouts, and Model Runner V2 disaggregation.
 categories: ["Engineering", "AI/ML"]
 tags: ["vllm", "platform-engineering", "kv-cache", "llm-serving", "gpu-memory"]
+labels: [llm-serving, caching]
 ---
 If you run high-throughput LLM serving infrastructure, your biggest operational bottleneck isn't FLOP availability. It's GPU memory capacity. As context windows expand toward hundreds of thousands of tokens, the Key-Value (KV) cache grows until it exhausts H100 or MI300X VRAM long before compute hardware reaches high utilization. The open source community addressed this core limitation in the [vLLM v0.28.0 release](https://github.com/vllm-project/vllm/releases/tag/v0.28.0), moving the engine from a GPU-bound memory model to a multi-tier storage hierarchy. By pairing native NVMe disk offloading with disaggregated execution, vLLM shifts how production systems handle active and cold attention states.
 
