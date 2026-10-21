@@ -1,8 +1,9 @@
 ---
-title: "Why Hiding Complexity Fails in Distributed Systems: Modularity vs. Modeling"
+title: 'Why Hiding Complexity Fails in Distributed Systems'
 description: Platform engineering leaders must distinguish between vertical modularity and horizontal modeling abstractions to build reliable distributed systems.
 categories: ["Engineering", "Infrastructure"]
 tags: [distributed-systems, platform-engineering, software-architecture, formal-methods, vllm]
+labels: [modularity-and-modeling]
 ---
 
 Most software engineers learn modular design in computer science courses. We learn to isolate implementation details behind clean abstract data types, draw vertical boundaries around modules, and encapsulate internal state. In a single-threaded process running on a local machine, encapsulation works. You call a function, the stack frame executes, and a result returns. Move to distributed infrastructure, however, and those vertical boundaries leak concurrency, network partitions, and subtle timing bugs directly into production code.
