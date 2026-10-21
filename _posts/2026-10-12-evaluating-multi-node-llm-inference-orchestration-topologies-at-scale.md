@@ -1,8 +1,9 @@
 ---
-title: "Evaluating Multi-Node LLM Inference Orchestration Topologies at Scale"
+title: 'Multi-Node LLM Inference Orchestration Topologies'
 description: "An engineering leader's guide to multi-node LLM inference topologies, KV-aware routing, disaggregated prefill/decode, and heterogeneous GPU orchestrators."
 categories: ["Engineering", "AI/ML"]
 tags: ["llm", "infrastructure", "gpu", "orchestration", "distributed-systems"]
+labels: [llm-orchestration, llm-serving]
 ---
 When single-node inference servers like vLLM or Ollama hit memory and bandwidth ceilings on large parameter models, infrastructure teams face a hard architectural boundary: scaling out LLM inference across multi-node clusters. The choices you make around tensor parallelism, KV-cache-aware routing, and disaggregated execution determine whether your self-hosted infrastructure delivers sub-second time-to-first-token or collapses under network latencies. According to recent technical comparisons in the [Nexlab survey on self-hosted orchestrators](https://www.nexlab.net/articles/self-hosted-inference-orchestrators-compared-2026/), control planes vary drastically from zero-config peer-to-peer topologies to strict Kubernetes-bound disaggregated frameworks. While single-machine servers like Ollama (181k stars) or single-file runtimes like llamafile (26k stars) offer zero-ops simplicity for a single box, production scaling requires orchestrating distributed model weights and dynamic request states across physical machine boundaries.
 
