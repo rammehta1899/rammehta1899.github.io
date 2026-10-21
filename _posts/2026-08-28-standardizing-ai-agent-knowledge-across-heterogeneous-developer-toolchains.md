@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Standardizing AI Agent Knowledge Across Heterogeneous Developer Toolchains
+title: 'Standardizing AI Agent Knowledge Across Developer Toolchains'
 date: 2026-08-28 13:44:32 -0400
 description: Platform engineering strategies for eliminating context drift across
   Cursor, Claude Code, and Codex using shared Model Context Protocol endpoints.
@@ -13,6 +13,7 @@ tags:
 - ai agents
 - developer tools
 - systems
+labels: [agent-context, mcp]
 author: Ram Mehta
 ---
 
