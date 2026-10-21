@@ -1,8 +1,9 @@
 ---
-title: Distributed Systems Classics Every Platform Engineering Leader Must Master
+title: 'Distributed Systems Classics Platform Engineers Must Master'
 description: Why platform engineering failures stem from ignoring classic distributed systems constraints like FLP impossibility, Lamport clocks, and CRDT limitations.
 categories: ["Engineering", "Platform Engineering"]
 tags: ["platform engineering", "distributed systems", "paxos", "raft", "crdt", "architecture"]
+labels: [distributed-systems-theory, consensus-and-replication, engineering-leadership]
 ---
 Every few months, an engineering team pitches an active-active, multi-region database architecture that promises zero latency overhead, zero data loss, and perfect global consistency across continents. It sounds compelling on a whiteboard. Then latency spikes, network partitions hit, and data quietly corrupts under concurrent writes. Most platform failures do not happen because engineers encountered a novel edge case. They happen because teams ignore theoretical limits established forty years ago. Studying foundational research compiled in [Nicu Vartolomei's reading list](https://nvartolomei.com/dist-sys-classics/) saves months of doomed technical design and cross-organizational friction.
 
