@@ -15,10 +15,13 @@
   <title>{{ site.title }} · {{ site.tagline }}</title>
   <meta name="description" content="{{ site.description }}">
   {% seo %}
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="stylesheet" href="{{ '/assets/css/editorial.css' | relative_url }}">
 </head>
 <body class="editorial">
-  <header class="masthead">
+  <header class="masthead" data-surface="site-chrome">
     <div class="wrap nav">
       <a class="brand" href="{{ '/' | relative_url }}">{{ site.data.profile.first_name }} <em>{{ site.data.profile.last_name }}</em></a>
       <nav class="navlinks">
@@ -30,5 +33,6 @@
     {{ content }}
     {% include footer.html %}
   </main>
+  {% include nav-analytics.html %}
 </body>
 </html>
