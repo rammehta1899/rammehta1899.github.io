@@ -1,8 +1,9 @@
 ---
-title: "In-Browser LLM Execution: Zero-Refactoring Swapping with WebLLM"
+title: 'In-Browser LLM Execution: Zero-Refactoring with WebLLM'
 description: "How WebLLM brings OpenAI API wire compatibility to WebGPU, enabling client-side LLM inference without refactoring frontend code."
 categories: ["Platform Engineering", "AI/ML"]
 tags: ["webllm", "webgpu", "openai", "llm", "webassembly"]
+labels: [client-side-llm]
 ---
 Managing LLM infrastructure at scale inevitably leads platform teams to a stark financial choice. Cloud inference costs scale linearly with active user traffic, while client hardware sits idle across thousands of user browsers. Offloading inference directly to the client browser reduces cloud API bills to zero for those workloads, but product engineering teams routinely push back against the massive refactoring required to swap out backend endpoint calls for custom WebAssembly runtime wrappers. [WebLLM](https://github.com/mlc-ai/web-llm) addresses this architectural friction by providing full wire compatibility with the OpenAI API protocol directly inside the browser.
 
