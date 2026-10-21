@@ -1,8 +1,9 @@
 ---
-title: "Hide or Reduce: Why Modularity Abstractions Break Distributed Systems"
+title: 'Hide or Reduce: Why Modularity Breaks Distributed Systems'
 description: "Discover why traditional modular encapsulation fails in high-concurrency systems and how platform leaders can use modeling abstractions to prove system invariants."
 categories: ["Engineering", "Platform Engineering"]
 tags: ["distributed systems", "system design", "software architecture", "concurrency", "platform engineering"]
+labels: [modularity-and-modeling]
 ---
 
 Most software engineers are conditioned to believe that abstraction is synonymous with encapsulation. We teach junior developers to hide implementation details behind clean interfaces, obscure low-level networking code behind client libraries, and encapsulate database calls inside repository layers. In traditional single-threaded applications, hiding complexity this way works well. Modern distributed infrastructure, however, consistently exposes the limits of encapsulation. When you hide execution interleavings and network latency behind a modular interface, the abstraction does not solve underlying concurrency; it simply hides race conditions and performance bottlenecks until production traffic explodes.
