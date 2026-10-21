@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Debugging Silent 200 OK Microservice Failures with Async Memory Snapshots
+title: 'Debugging Silent 200 OK Failures with Memory Snapshots'
 date: 2026-09-01 13:18:03 -0400
 description: Silent 200 OK failures escape standard telemetry. Learn how asynchronous
   live memory snapshots isolate hidden state corruption without thread pauses.
@@ -13,6 +13,7 @@ tags:
 - observability
 - distributed systems
 - ai engineering
+labels: [incident-response, production-debugging]
 author: Ram Mehta
 issue_number: 12
 issue_url: https://github.com/rammehta1899/blog-gen/issues/12
