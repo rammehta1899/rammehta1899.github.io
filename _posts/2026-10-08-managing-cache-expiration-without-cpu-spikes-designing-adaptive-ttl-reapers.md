@@ -1,8 +1,9 @@
 ---
-title: "Managing Cache Expiration Without CPU Spikes: Designing Adaptive TTL Reapers"
+title: 'Cache Expiration Without CPU Spikes: Adaptive TTL Reapers'
 description: "Learn how to balance memory leaks and CPU thrashing in high-throughput caches using Redis-style adaptive active TTL reapers."
 categories: ["Engineering"]
 tags: ["caching", "system-design", "performance", "redis", "platform-engineering"]
+labels: [caching]
 ---
 Building high-throughput stateful platform services requires making trade-offs between memory footprints and CPU utilization. When we introduce a Time-to-Live (TTL) mechanism to our in-memory caches, we often assume the system will magically clean up after itself when keys expire. The reality is much more unforgiving. If you rely solely on passive expiration (only deleting keys when a client attempts to read them) you are sitting on a ticking memory bomb. For a deep look at these trade-offs, the interactive curriculum at [system design in depth](https://system-design-in-depth.pages.dev) offers excellent visual breakdowns of how stateful systems handle transient data.
 
