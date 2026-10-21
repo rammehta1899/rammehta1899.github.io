@@ -1,8 +1,9 @@
 ---
-title: "Designing Asynchronous Agent Runtimes: Stateful Queues and Decoupled Execution"
+title: 'Async Agent Runtimes: Stateful Queues, Decoupled Execution'
 description: "Explore the architectural shift to asynchronous AI agent runtimes with stateful checkpointing, background daemons, and explicit security boundaries."
 categories: ["Engineering", "AI/ML"]
 tags: ["platform engineering", "agentic workflows", "langgraph", "software architecture"]
+labels: [agent-workflows, agent-runtimes]
 ---
 We have built a collective habit of treating AI agents like glorified chatbot sessions. You type a prompt, watch the token stream, and wait. If you close the browser window, disconnect from the network, or experience a minor timeout, your execution state vaporizes. That is a fragile approach to engineering. For complex, long-running engineering tasks, agents must operate in the background as durable services. Building this resilience requires decoupling the execution runtime from the user interface.
 
