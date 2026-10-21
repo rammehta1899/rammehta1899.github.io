@@ -13,6 +13,15 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 show_excerpts: true
+# Every post gets a share-card image (Open Graph / Twitter) unless its
+# front matter sets its own `image:`. jekyll-seo-tag emits og:image and
+# twitter:card summary_large_image from this.
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      image: "/assets/profile.jpg"
 # header_pages removed to prevent minima auto-nav doubling our custom nav
 minima:
   skin: auto
