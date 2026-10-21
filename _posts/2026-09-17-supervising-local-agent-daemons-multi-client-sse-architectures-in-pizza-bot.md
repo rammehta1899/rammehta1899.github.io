@@ -1,8 +1,9 @@
 ---
-title: "Supervising Local Agent Daemons: Multi-Client SSE Architectures in Pizza Bot"
+title: 'Supervising Agent Daemons: Multi-Client SSE in Pizza Bot'
 description: "How Pizza Bot uses supervised Node.js daemons, HTTP/SSE, and LangGraph checkpoints to build resilient, multi-client local AI workflows."
 categories: ["Engineering", "AI/ML"]
 tags: ["platform engineering", "ai agents", "architecture", "electron", "node.js"]
+labels: [agent-runtimes, pizza-bot]
 ---
 When developers build local AI interfaces, they frequently bind agent execution directly to the UI thread. If you refresh the browser tab or close an Electron renderer, your multi-step tool invocation dies midway through execution. The open-source project [Pizza Bot](https://github.com/pizza-bot-app/pizza-bot) tackles this reliability gap by decoupling stateful agent runtimes from the client interface into a dedicated, supervised background daemon. Originally developed at Amazon and released under the Apache 2.0 license, the project demonstrates how local-first software can handle long-running agentic work without risking orphaned runs or corrupted execution states.
 
