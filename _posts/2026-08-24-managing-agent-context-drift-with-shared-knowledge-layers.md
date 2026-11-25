@@ -14,7 +14,7 @@ tags:
 - multi-agent
 - ozbrain
 labels: [agent-context, mcp]
-author: Ram Mehta
+author: Ramesh Mehta
 ---
 
 *Published August 24, 2026 at 2:04 PM ET*
