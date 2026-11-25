@@ -14,7 +14,7 @@ tags:
 - devops
 - zero-trust
 labels: [secrets-management, zero-trust, security]
-author: Ram Mehta
+author: Ramesh Mehta
 ---
 
 *Published August 25, 2026 at 2:04 PM ET*
