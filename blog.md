@@ -2,7 +2,7 @@
 layout: default
 title: Blog
 permalink: /blog/
-description: Blog posts by Ram Mehta on engineering leadership, platform, and product.
+description: Blog posts by Ramesh Mehta on engineering leadership, platform, and product.
 ---
 
 <div style="margin-top:12px">
