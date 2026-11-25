@@ -14,7 +14,7 @@ tags:
 - incident response
 - hyperprobe
 labels: [ai-debugging, incident-response]
-author: Ram Mehta
+author: Ramesh Mehta
 ---
 
 *Published August 19, 2026 at 5:22 PM ET*
