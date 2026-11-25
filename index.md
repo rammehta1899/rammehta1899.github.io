@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-description: Ram Mehta — Engineering Leader exploring interesting problems
+description: Ramesh Mehta — Engineering Leader exploring interesting problems
 ---
 
 {% assign profile = site.data.profile %}
