@@ -14,7 +14,7 @@ tags:
 - distributed systems
 - ai engineering
 labels: [incident-response, production-debugging]
-author: Ram Mehta
+author: Ramesh Mehta
 issue_number: 12
 issue_url: https://github.com/rammehta1899/blog-gen/issues/12
 ---
