@@ -14,7 +14,7 @@ tags:
 - git
 - zero trust
 labels: [secrets-management, zero-trust, security]
-author: Ram Mehta
+author: Ramesh Mehta
 ---
 
 *Published August 20, 2026 at 2:01 PM ET*
