@@ -14,7 +14,7 @@ tags:
 - ai agents
 - devops
 labels: [ai-debugging, incident-response]
-author: Ram Mehta
+author: Ramesh Mehta
 ---
 
 *Published August 19, 2026 at 11:49 AM ET*
