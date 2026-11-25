@@ -14,7 +14,7 @@ tags:
 - dx core 4
 - metrics
 labels: [engineering-leadership]
-author: Ram Mehta
+author: Ramesh Mehta
 ---
 
 *Published August 21, 2026 at 2:02 PM ET*
