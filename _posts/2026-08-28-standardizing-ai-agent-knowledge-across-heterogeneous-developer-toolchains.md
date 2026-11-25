@@ -14,7 +14,7 @@ tags:
 - developer tools
 - systems
 labels: [agent-context, mcp]
-author: Ram Mehta
+author: Ramesh Mehta
 ---
 
 *Published August 28, 2026 at 1:44 PM ET*
