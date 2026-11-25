@@ -14,7 +14,7 @@ tags:
 - context-window
 - developer-experience
 labels: [agent-context, mcp]
-author: Ram Mehta
+author: Ramesh Mehta
 ---
 
 *Published August 27, 2026 at 8:32 AM ET*
