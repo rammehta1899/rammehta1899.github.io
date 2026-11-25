@@ -14,7 +14,7 @@ tags:
 - git
 - platform engineering
 labels: [secrets-management, git-native-secrets]
-author: Ram Mehta
+author: Ramesh Mehta
 issue_number: 13
 issue_url: https://github.com/rammehta1899/blog-gen/issues/13
 ---
